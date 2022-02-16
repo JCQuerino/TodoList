@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto, helvetica, sans-serif;
+    list-style: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.topo{
+    width: 100%;
+    position: relative;
+    min-height: 280px;
+    background-size: cover;
+    background-position: 60% 22%;
+    background-repeat: no-repeat;
+    background-image: url(../images/colorful-patterns-large.jpg);
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(186,85,211,0.5)
+}
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: 70px auto;
+    height: auto;
+}
+.titleAndNumberTask{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titleAndNumberTask h1{
+    color: white;
+    letter-spacing: 18px;
+}
+.titleAndNumberTask span{
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.wrapper-input-task{
+    margin-top: 28px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 2px;
+}
+.tasks{
+    margin-top: 30px;
+    width: 100%;
+}
+.task-single{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #ccc; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.one,.two{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.task-single i{
+    color: purple;
+    cursor: pointer;
+}
+.two i{
+    color: purple;
+    cursor: pointer;
+}
+.task-single:not(:first-child){
+    margin-top: 5px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.input input[type=text]{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: none;
+}
+.input input[type=button]{
+    margin-right: 20px;
+    padding: 9px 17px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: #834d9b;  
+    background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);  
+    background: linear-gradient(to right, #d04ed6, #834d9b);
+    font-weight: 500;
+    cursor: pointer;
+}
+.del-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.del-wrapper input[type=button]{
+    padding: 9px 17px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: #834d9b;  
+    background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);  
+    background: linear-gradient(to right, #d04ed6, #834d9b);
+    font-weight: 500;
+}
+.dayAndTime{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 20;
+}
+.dayAndTime span{
+    color: white;
+    font-weight: 500;
+}
+.dayAndTime span:first-child{
+    font-size: 30px;
+}

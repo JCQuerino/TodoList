@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+    <title>To-do List</title>
+</head>
+<body>
+    <main>
+        <div class="dayAndTime">
+            <span id="diaSemana"></span>
+            <span></span>
+            <span id="horario"></span>
+        </div>
+        <div class="topo">
+            <div class="overlay">
+                <div class="container">
+                    <div class="titleAndNumberTask">
+                        <h1>TO-DO LIST</h1>
+                        <span>Tarefas Cadastradas:</span><span id="numeroTask"></span>
+                    </div>
+                    <div class="wrapper-input-task">
+                        <div class="input">
+                            <input type="text" placeholder="Digite a sua task aqui" id="content-task">
+                            <input type="button" class="addTask" value="Enviar">
+                        </div>
+                    </div>
+                    <div class="tasks">        
+                    </div>
+                    <div class="del-wrapper">
+                        <input type="button" class="removeAllTasks" value="Deletar tasks">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/geral.js"></script>
+</body>
+</html>
